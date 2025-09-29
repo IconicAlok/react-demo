@@ -1,15 +1,10 @@
 // import react, { component } from "React";
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <header>
-      <div className="bg-blue-500 text-white p-4 rounded-xl">
-        tailwind is working
-      </div>
+      <div className="bg-blue-500 text-white p-4 rounded-xl">{title}</div>
     </header>
   );
-};
-Header.defaultProps = {
-  title: "Task Tracker",
 };
 export default Header;
